@@ -68,12 +68,12 @@ public class Main {
         System.out.println();
 
 
-        double[] q = {1.57, 7.654, 9.986};
-        for (int k = q.length-1; k >=0; k--) {
+        double[] w = {1.57, 7.654, 9.986};
+        for (int k = w.length-1; k >=0; k--) {
             if (k != 0) {
-                System.out.print(q[k] + ",");
+                System.out.print(w[k] + ",");
             } else {
-                System.out.print(q[k]);
+                System.out.print(w[k]);
             }
         }
         System.out.println();
