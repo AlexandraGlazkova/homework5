@@ -23,10 +23,10 @@ public class Main {
 //        сразу заполнив его значениями.
         double[] array = {1.57, 7.654, 9.986};
         for (int k = 0; k < array.length; k++) {
-            if (k== array.length - 1) {
+            if (k == array.length - 1) {
                 System.out.print(array[k]);
             } else {
-                System.out.print(array[k]+", ");
+                System.out.print(array[k] + ", ");
             }
         }
         System.out.println();
@@ -53,12 +53,12 @@ public class Main {
 // другого массива – на другой.
 //Запятая между последним элементом одного массива и первым элементом следующего не нужна.
 
-         System.out.println("В обратном порядке");
+        System.out.println("В обратном порядке");
         int[] g = new int[3];
         g[0] = 1;
         g[1] = 2;
         g[2] = 3;
-        for (int i = g.length-1; i >=0; i--) {
+        for (int i = g.length - 1; i >= 0; i--) {
             if (i != 0) {
                 System.out.print(g[i] + ", ");
             } else {
@@ -69,7 +69,7 @@ public class Main {
 
 
         double[] q = {1.57, 7.654, 9.986};
-        for (int k = q.length-1; k >=0; k--) {
+        for (int k = q.length - 1; k >= 0; k--) {
             if (k != 0) {
                 System.out.print(q[k] + ",");
             } else {
@@ -82,9 +82,9 @@ public class Main {
         d[2] = 5;
         d[3] = 9;
         d[0] = 520;
-        for (int t = food.length-1; t >= 0; t--) {
-            if (t!=0) {
-                System.out.print(d[t]+ ", ");
+        for (int t = food.length - 1; t >= 0; t--) {
+            if (t != 0) {
+                System.out.print(d[t] + ", ");
             } else {
                 System.out.println(food[t]);
             }
@@ -95,7 +95,7 @@ public class Main {
 //     Важно: код должен работать с любым целочисленным массивом, поэтому для решения
 //     задания вам нужно использовать циклы.
 //     Распечатайте результат преобразования в консоль.
-        {System.out.println("Все нечетные числа, делаем четными");}
+        System.out.println("Все нечетные числа, делаем четными");
         int[] r = new int[3];
         r[0] = 1;
         r[1] = 2;
@@ -103,10 +103,12 @@ public class Main {
         for (int i = 0; i < r.length; i++) {
             if (r[i] % 2 != 0)
                 r[i] = r[i] + 1;
-            if (i != r.length - 1) {
-                System.out.print(r[i] + ", ");
-            } else {
-                System.out.println(r[i]);
+            {
+                if (i != r.length - 1) {
+                    System.out.print(r[i] + ", ");
+                } else {
+                    System.out.println(r[i]);
+                }
             }
         }
     }
