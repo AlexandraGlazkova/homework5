@@ -10,20 +10,25 @@ public class Main {
         weight[0] = 1;
         weight[1] = 2;
         weight[2] = 3;
-        for (int i = 0; i < 3; i++) {
-            if(i!=2)
-            System.out.print(weight[i] + ", ");
-        else System.out.println(weight[i]);}
+        for (int i = 0; i < weight.length; i++) {
+            if (i != weight.length - 1) {
+                System.out.print(weight[i] + ", ");
+            } else {
+                System.out.println(weight[i]);
+            }
+        }
+
 
 //       2. Массив, в котором можно хранить три дробных числа – 1.57, 7.654, 9.986 –
 //        сразу заполнив его значениями.
         double[] array = {1.57, 7.654, 9.986};
-        for (int k = 0; k < array.length; k++)
-        if (k== array.length - 1){
-            System.out.print(array[k]);
-        } else
-            { System.out.print(array[k]+",");
+        for (int k = 0; k < array.length; k++) {
+            if (k== array.length - 1) {
+                System.out.print(array[k]);
+            } else {
+                System.out.print(array[k]+", ");
             }
+        }
         System.out.println();
 
 //        3. Произвольный массив – тип и количество данных определите сами. Самостоятельно выберите
@@ -32,11 +37,12 @@ public class Main {
         food[2] = 5;
         food[3] = 9;
         food[0] = 520;
-        for (int t = 0; t < 5; t++) {
-            if (t!=4)
-            System.out.print(food[t]+ ", ");
-            else
+        for (int t = 0; t < food.length; t++) {
+            if (t != food.length - 1) {
+                System.out.print(food[t] + ", ");
+            } else {
                 System.out.println(food[t]);
+            }
         }
 
 //        ## 3 задача
@@ -47,36 +53,41 @@ public class Main {
 // другого массива – на другой.
 //Запятая между последним элементом одного массива и первым элементом следующего не нужна.
 
-        { System.out.println("В обратном порядке");}
+         System.out.println("В обратном порядке");
         int[] g = new int[3];
         g[0] = 1;
         g[1] = 2;
         g[2] = 3;
         for (int i = g.length-1; i >=0; i--) {
-            if(i!=0)
+            if (i != 0) {
                 System.out.print(g[i] + ", ");
-            else System.out.print(g[i]);}
+            } else {
+                System.out.print(g[i]);
+            }
+        }
         System.out.println();
 
 
         double[] q = {1.57, 7.654, 9.986};
-        for (int k = q.length-1; k >=0; k--){
-            if (k!=0)
-                System.out.print(q[k]+",");
-            else
-             System.out.print(q[k]);
+        for (int k = q.length-1; k >=0; k--) {
+            if (k != 0) {
+                System.out.print(q[k] + ",");
+            } else {
+                System.out.print(q[k]);
             }
+        }
         System.out.println();
 
         int[] d = new int[5];
         d[2] = 5;
         d[3] = 9;
         d[0] = 520;
-        for (int t = 4; t >= 0; t--) {
-            if (t!=0)
+        for (int t = food.length-1; t >= 0; t--) {
+            if (t!=0) {
                 System.out.print(d[t]+ ", ");
-            else
+            } else {
                 System.out.println(food[t]);
+            }
         }
 //     4 задача
 //     Пройдитесь по первому целочисленному массиву и все нечетные числа в нем сделайте четными
@@ -89,13 +100,15 @@ public class Main {
         r[0] = 1;
         r[1] = 2;
         r[2] = 3;
-        for (int i = 0; i < 3; i++) {
-            if (r[i]%2!=0)
-                r[i]=r[i]+1;
-            if(i!=2)
+        for (int i = 0; i < r.length; i++) {
+            if (r[i] % 2 != 0)
+                r[i] = r[i] + 1;
+            if (i != r.length - 1) {
                 System.out.print(r[i] + ", ");
-            else System.out.println(r[i]);}
-
+            } else {
+                System.out.println(r[i]);
+            }
+        }
     }
 }
 
